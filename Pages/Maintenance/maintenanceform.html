@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Request</title>
+    <link rel="stylesheet" href="maintenaceform.css">
+</head>
+<body>
+    <div id="main--container">
+        <img src="../Images/whitehat_homes_banner-2.png" alt="WhiteHat Auditors Logo" id="whhlogo" height="150" width="650">
+        <div id="navmenu">
+            <a href="/index.html" class="nav-button">Home</a>
+            <a href="../Disponible/disponible.html" class="nav-button">Espacios Disponibles / Available Spaces</a>
+            <a href="../Maintenance/maintenanceform.html" class="nav-button">Mantenimiento / Maintenance</a>
+        </div>
+        <H2>Somete una Orden de Mantenimiento / Submit a Maintenance Request</H2>
+    <form id="maintenanceForm">
+        <div class="form-group">
+        <br><label for="tenantName">Nombre / Name</label>
+        <input type="text" id="tenantName" name="tenantName" required>
+        </div>
+
+        <div class="form-group">
+        <label for="apartmentNumber">Direccion y Numero de Apt / Address and Apt Number</label>
+        <input type="text" id="apartmentNumber" name="apartmentNumber" required>
+        </div>
+
+        <div class="form-group">
+        <label for="issueType">Tipo de problema / Type of Issue</label>
+        <select id="issueType" name="issueType" required>
+            <option value="">Select an issue</option>
+            <option value="Plumbing"> Plomeria / Plumbing</option>
+            <option value="Electrical">Electrico / Electrical</option>
+            <option value="Heating/Cooling">Heating/Cooling</option>
+            <option value="Appliance">Appliance</option>
+            <option value="Other">Otro / Other</option>
+        </select><br><br>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Describa el Problema / Describe the Issue</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <br><label for="accessPermission">Podemos entrar? / Permission to Enter?</label>
+      <select id="accessPermission" name="accessPermission" required>
+        <option value="">Select</option>
+        <option value="Yes">Si / Yes, you can enter</option>
+        <option value="No">No, contact me first</option>
+      </select>
+    </div>
+
+    <br><button type="submit">Submit Request</button>
+  </form>
+
+  <script src="script.js"></script>
+
+    </div>
+</body>
+</html>

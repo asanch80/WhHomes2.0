@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease Management</title>
+    <link rel="stylesheet" href="leases.css".css>
+</head>
+<body>
+    <div id="main--container">
+        <img src="../Images/whitehat_homes_banner-2.png" alt="WhiteHat Auditors Logo" id="whhlogo" height="150" width="710">
+        <div id="navmenu">
+            <a href="../Dashboard/dashboard.html" class="nav-button">Home</a> <br>
+            <a href="../Documents/documents.html" class="nav-button">Documents</a><br>
+            <a href="../LeaseManagement/leases.html" class="nav-button">Leases</a><br>
+            <a href="../Maintenance/maintenanceform.html" class="nav-button">Maintenance</a><br>
+        </div>
+        <H1>Open Leases</H1>
+        <table id="rentalTable">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Tenant</th>
+                    <th>Phone</th>
+                    <th>eMail</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Rent</th>
+                    <th>Status</th>
+                    <th>Days Left</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New rows will go here -->
+            </tbody>
+        </table>
+    
+        <br>
+    
+        <button onclick="addRow()" id="addP">Add Property</button>
+    
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

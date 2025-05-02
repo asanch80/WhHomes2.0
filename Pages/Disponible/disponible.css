@@ -1,0 +1,114 @@
+#main--container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#whhlogo{
+    border-style:groove;
+}
+#navmenu{
+    display: flex;
+    gap: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 86%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+/*---------------------------------------------SlideShow--------------------------------------------------*/
+#slideshow-card1 {
+    padding: 10%;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  #slideshow-card2 {
+    padding: 10%;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  #slideshow-card3 {
+    padding: 10%;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  #slideshow-card4 {
+    padding: 10%;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+.aptdescription{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+  .slides {
+    display: none;
+    position: relative;
+  }
+  
+  .slides img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .caption {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  

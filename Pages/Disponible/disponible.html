@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="disponible.css">
+</head>
+<body>
+    <div id="main--container">
+        <img src="../Images/whitehat_homes_banner-2.png" alt="WhiteHat Auditors Logo" id="whhlogo" height="150" width="650">
+        <div id="navmenu">
+            <a href="/index.html" class="nav-button">Home</a> <br>
+            <a href="/Pages/Disponible/disponible.html" class="nav-button">Espacios Disponibles / Available Spaces</a><br>
+            <a href="../Maintenance/maintenanceform.html" class="nav-button">Mantenimiento / Maintenance</a><br>
+        </div>
+    </div><br><br>
+    <!--1------------------------------------------------slideshow---------------------------------------------------------1-->
+    <div id="slideshow-card1">
+        <div class="slides fade">
+          <img src="image1.jpg" alt="Slide 1">
+          <div class="caption">High-Quality Products</div>
+        </div>
+        <div class="slides fade">
+          <img src="image2.jpg" alt="Slide 2">
+          <div class="caption">Fast & Reliable Service</div>
+        </div>
+        <div class="slides fade">
+          <img src="image3.jpg" alt="Slide 3">
+          <div class="caption">Customer Satisfaction Guaranteed</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div><br>
+    <h3 class="aptdescription">Space description:</h3>
+    <h4 class="aptdescription">Status:</h4>
+    <p class="aptdescription"> Modern one-bedroom apartment featuring an open-concept layout, stainless steel appliances, hardwood floors, and a private balcony. Located in a vibrant neighborhood, close to shops, dining, and public transportation. </p>
+    
+    <div id="slideshow-card2">
+        <div class="slides fade">
+          <img src="image1.jpg" alt="Slide 1">
+          <div class="caption">High-Quality Products</div>
+        </div>
+        <div class="slides fade">
+          <img src="image2.jpg" alt="Slide 2">
+          <div class="caption">Fast & Reliable Service</div>
+        </div>
+        <div class="slides fade">
+          <img src="image3.jpg" alt="Slide 3">
+          <div class="caption">Customer Satisfaction Guaranteed</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div><br>
+    <h3 class="aptdescription">Space description:</h3>
+    <h4 class="aptdescription">Status:</h4>
+    <p class="aptdescription">Modern one-bedroom apartment featuring an open-concept layout, stainless steel appliances, hardwood floors, and a private balcony. Located in a vibrant neighborhood, close to shops, dining, and public transportation.</p>
+    
+    <div id="slideshow-card3">
+        <div class="slides fade">
+          <img src="image1.jpg" alt="Slide 1">
+          <div class="caption">High-Quality Products</div>
+        </div>
+        <div class="slides fade">
+          <img src="image2.jpg" alt="Slide 2">
+          <div class="caption">Fast & Reliable Service</div>
+        </div>
+        <div class="slides fade">
+          <img src="image3.jpg" alt="Slide 3">
+          <div class="caption">Customer Satisfaction Guaranteed</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div><br>
+    <h3 class="aptdescription">Space description:</h3>
+    <h4 class="aptdescription">Status:</h4>
+    <p class="aptdescription">Modern one-bedroom apartment featuring an open-concept layout, stainless steel appliances, hardwood floors, and a private balcony. Located in a vibrant neighborhood, close to shops, dining, and public transportation.</p>
+    
+    <div id="slideshow-card4">
+        <div class="slides fade">
+          <img src="image1.jpg" alt="Slide 1">
+          <div class="caption">High-Quality Products</div>
+        </div>
+        <div class="slides fade">
+          <img src="image2.jpg" alt="Slide 2">
+          <div class="caption">Fast & Reliable Service</div>
+        </div>
+        <div class="slides fade">
+          <img src="image3.jpg" alt="Slide 3">
+          <div class="caption">Customer Satisfaction Guaranteed</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div><br>
+    <h3 class="aptdescription">Space description:</h3>
+    <h4 class="aptdescription">Status:</h4>
+    <p class="aptdescription">Modern one-bedroom apartment featuring an open-concept layout, stainless steel appliances, hardwood floors, and a private balcony. Located in a vibrant neighborhood, close to shops, dining, and public transportation.</p>
+    <!--1------------------------------------------------JavaScript---------------------------------------------------------1-->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let slides = document.getElementsByClassName("slides");
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 4000); // Change slide every 4 seconds
+        }
+        
+        function plusSlides(n) {
+          slideIndex += n - 1;
+          showSlides();
+        }
+    </script>
+</body>
+</html>

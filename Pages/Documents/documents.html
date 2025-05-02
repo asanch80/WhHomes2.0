@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" href="documents.css">
+</head>
+<body>
+    <div id="main--container">
+        <img src="../Images/whitehat_homes_banner-2.png" alt="WhiteHat Auditors Logo" id="whhlogo" height="150" width="710">
+            <h1>Documents</h1>
+            <div id="navmenu">
+                <a href="../Dashboard/dashboard.html" class="nav-button">Home</a> <br>
+                <a href="../Documents/documents.html" class="nav-button">Documents</a><br>
+                <a href="../LeaseManagement/leases.html" class="nav-button">Leases</a><br>
+                <a href="../Maintenance/maintenanceform.html" class="nav-button">Maintenance</a><br>
+            </div>
+    </div>
+<!--Below I will code about Gdrive connection-->
+<div id="documents" class="documents"></div>
+
+<script>
+  const apiKey = 'AIzaSyAuufyfZE_xPvBzhwNfChcZRXeKIAETzvk';
+  const folderId = '1hN-id1oeyEtDzzhxnc1SxOGiaPm71vP0?usp=share_link';
+
+  function listFiles() {
+    fetch(`https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents&key=${apiKey}&fields=files(id,name,mimeType,webViewLink)`)
+    .then(response => response.json())
+    .then(data => {
+      const documentsDiv = document.getElementById('documents');
+      data.files.forEach(file => {
+        const fileCard = document.createElement('div');
+        fileCard.className = 'doc-card';
+        fileCard.innerHTML = `
+          <h3>${file.name}</h3>
+          <a href="${file.webViewLink}" target="_blank" class="doc-button">View Document</a>
+        `;
+        documentsDiv.appendChild(fileCard);
+      });
+    })
+    .catch(error => console.error('Error fetching files:', error));
+  }
+
+  listFiles();
+</script>   
+</body>
+</html>
